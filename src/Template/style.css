@@ -258,8 +258,9 @@ mark {
   padding-right: 2%;
   gap: 5px;
 }
-.about-photo {
-  width: 0 0 30%;
+.about-photo img {
+  width: 25vw;
+  border-radius: 50px;
 }
 
 .about-summary {
@@ -287,14 +288,14 @@ mark {
 }
 
 .panel-title {
-  font-size: 25px;
+  font-size: 30px;
   width: 100%;
   position: relative;
   margin: 0;
   padding: 10px 10px 0 48px;
   display: block;
   cursor: pointer;
-
+  font-weight: 600;
   font-family: var(--font-family-main);
 }
 
@@ -368,8 +369,9 @@ mark {
 
 .project-img img {
   border-radius: 15px;
-  height: 35vh;
-  width: 70vh;
+  height: 15vw;
+  width: 25vw;
+  object-fit: contain;
 }
 
 .project-description {
@@ -460,17 +462,12 @@ mark {
 /*Footer Section ------------------------------------------------------------------------------------------*/
 footer {
   text-align: center;
-  padding: 15px;
   margin-top: 4%;
 }
 
-.footer-box {
+.footer-container {
   display: flex;
   justify-content: space-around;
-}
-
-.footer-box img {
-  height: 75px;
 }
 
 .footer-icon-links,
@@ -486,10 +483,10 @@ footer {
   flex-direction: row;
   align-items: center;
   gap: 20px;
+  font-size: var(--font-size-small);
 }
 
 .footer-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 20vw;
+  height: auto;
 }
