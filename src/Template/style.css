@@ -425,17 +425,17 @@ mark {
   justify-content: center;
   flex-wrap: wrap-reverse;
   flex-direction: row-reverse;
-  gap: 25px;
+  gap: 20px;
 }
 
 .education-item-skill {
-  width: 70vh;
+  width: 35vh;
   border: 1px solid var(--primary-color);
   border-radius: 10px;
-  align-items: center;
   padding: 1.5%;
   margin-bottom: 10px;
   font-weight: 800;
+  background-color: #84888420;
 }
 
 .education-item-skill > a {
