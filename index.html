@@ -31,21 +31,37 @@
   </head>
 
   <body>
-    <nav class="fixed-nav">
+    <nav class="fixed-nav" aria-label="Main Navigation">
       <div>
         <a href="index.html">
-          <img class="icon-nav" src="src/Resources/Images/logo.png" />
+          <img
+            class="icon-nav"
+            src="src/Resources/Images/logo.png"
+            alt="Logo"
+          />
         </a>
       </div>
 
       <div class="tab-nav">
-        <button class="about-tab section-button" data-section="About">
+        <button
+          class="about-tab section-button"
+          data-section="About"
+          aria-label="About Me"
+        >
           <a href="#About">About</a>
         </button>
-        <button class="project-tab section-button" data-section="Project">
+        <button
+          class="project-tab section-button"
+          data-section="Project"
+          aria-label="Projects"
+        >
           <a href="#Project">Project</a>
         </button>
-        <button class="education-tab section-button" data-section="Education">
+        <button
+          class="education-tab section-button"
+          data-section="Education"
+          aria-label="Education"
+        >
           <a href="#Education">Education</a>
         </button>
       </div>
@@ -57,10 +73,11 @@
 
     <header id="Welcome">
       <p>Hello there, I'm</p>
-      <p1
-        ><strong>Alan<span class="hyphen">-</span>Deng</strong></p1
+      <strong class="welcome-name"
+        >Alan<span class="hyphen">-</span>Deng</strong
       >
       <p>Electrical Engineer &#8594; Data Analyst</p>
+
       <button class="CV-download-button" id="CV-download">
         <i class="fa-solid fa-file-arrow-down fa-xl"></i>
         <a href="src/Resources/Certificates/Alan Resume.pdf" target="_blank">
@@ -79,7 +96,7 @@
       </button>
 
       <div class="email-container">
-        <i class="fa-solid fa-envelope fa-xl"></i>
+        <i class="fa-solid fa-envelope fa-xl email-icon"></i>
         <span class="email">alan.rb.deng@gmail.com</span>
         <button class="copy-button" onclick="copyEmail()">
           <i class="fa-regular fa-copy"></i>
@@ -89,266 +106,144 @@
 
     <section id="About">
       <h1>About</h1>
-      <div class="about-column-Container">
+      <div class="about-Container">
         <div class="about-photo">
           <img src="src/Resources/Images/Headshot.png" />
         </div>
 
-        <!-- <div class="about-summary">
-          <p>
-            Transitioning from electrical to data analysis, driven by a passion
-            for transforming data into actionable insights and leveraging AI’s
-            potential. Skilled in SQL and committed to continuous learning, with
-            hands-on experience in analytics from the University of Toronto’s
-            data analytics bootcamp. A flexible and detail-oriented collaborator
-            who thrives in both independent and team environments, and is eager
-            to deliver data-driven results that support business success.
-          </p>
-        </div> -->
+        <div class="about-right-container">
+          <div class="about-summary">
+            <mark>Data Analyst</mark> with an Electrical Engineering background
+            and a passion for <mark>Solving Complex Problems</mark>. I analyze
+            data to uncover valuable information that leads to
+            <mark>Effective Business Decisions</mark>.
+          </div>
 
-        <faq class="about-faq">
-          <div class="faq-content">
-            <div class="faq-question">
-              <input id="q1" type="checkbox" class="panel" />
-              <div class="plus">+</div>
-              <label for="q1" class="panel-title"
-                >Why transition from Electrical Engineer to Data Analyst?</label
-              >
-              <div class="panel-content">
-                <p>
-                  Transitioning from electrical engineering to a career as a
-                  data analyst is a natural next step in my journey, driven by
-                  my <mark>deep interest in AI</mark> and
-                  <mark>problem-solving</mark>. While my foundation in
-                  electrical engineering taught me the precision of working with
-                  complex systems, it also ignited a curiosity about how
-                  data-driven insights and AI could elevate everyday
-                  experiences.
-                  <br />
-                  <br />
-                  As I worked on projects involving both hardware and software,
-                  I realized the incredible value of data as a tool to optimize
-                  and innovate. Data analytics provides a way to dive deeper
-                  into meaningful <mark>patterns and trends</mark>, helping to
-                  make informed decisions that drive tangible improvements. My
-                  engineering background equips me with a unique advantage: an
-                  understanding of both the technical underpinnings of systems
-                  and the analytical mindset to extract and interpret valuable
-                  data insights.
-                  <br />
-                  <br />
-                  This transition allows me to merge my technical expertise with
-                  my passion for <mark>continuous learning</mark> in the tech
-                  field. I’m excited to leverage my
-                  <mark>problem-solving skills</mark> and
-                  <mark>analytical abilities</mark> to contribute meaningfully
-                  to data-driven projects that solve real-world challenges.
-                </p>
+          <h2>My Technologies</h2>
+          <div class="about-tech-stack">
+            <div class="tech-stack-skill">
+              <img
+                width="75"
+                height="75"
+                src="https://img.icons8.com/external-outline-juicy-fish/60/3461eb/external-sql-coding-and-development-outline-outline-juicy-fish.png"
+                alt="external-sql-coding-and-development-outline-outline-juicy-fish"
+              />
+              <div class="tech-stack-description">
+                <h5>SQL</h5>
+                <p>Structured Query Language</p>
               </div>
             </div>
 
-            <div class="faq-question">
-              <input id="q2" type="checkbox" class="panel" />
-              <div class="plus">+</div>
-              <label for="q2" class="panel-title"
-                >Why choose Data Analysis?</label
-              >
-              <div class="panel-content">
-                <p>
-                  Choosing data analysis is a purposeful and exciting step for
-                  me, driven by the opportunity to
-                  <mark>turn raw information into actionable insights</mark>. I
-                  find immense satisfaction in uncovering hidden patterns and
-                  trends within data, where every dataset feels like a
-                  <mark>puzzle</mark> that, once solved, can guide impactful
-                  decisions. Data analysis offers the perfect balance of
-                  technical skill and problem-solving, allowing me to combine
-                  logic and creativity in meaningful ways.
-                  <br />
-                  <br />
-                  My passion for data analysis is also rooted in its
-                  <mark>collaborative nature</mark>. I enjoy working in
-                  cross-functional teams, where insights drawn from data can
-                  inform decisions across multiple areas, from product
-                  development to strategy. This role enables me to bridge gaps
-                  between data and business goals, contributing to solutions
-                  that create value and improve outcomes.
-                  <br />
-                  <br />
-                  The evolving world of data analytics continually offers
-                  <mark
-                    >fresh challenges, new tools, and innovative methods to
-                    explore</mark
-                  >. This environment of constant learning and discovery aligns
-                  with my drive to stay current and deepen my expertise. By
-                  pursuing a path in data analysis, I’m excited to make a
-                  tangible difference through data-driven strategies that have a
-                  real impact on business and society.
-                </p>
+            <div class="tech-stack-skill">
+              <img
+                width="75"
+                height="75"
+                src="https://img.icons8.com/ios/100/3461eb/python--v1.png"
+                alt="python--v1"
+              />
+              <div class="tech-stack-description">
+                <h5>Python</h5>
+                <p>Programming Language</p>
               </div>
             </div>
 
-            <div class="faq-question">
-              <input id="q3" type="checkbox" class="panel" />
-              <div class="plus">+</div>
-              <label for="q3" class="panel-title"
-                >What are the qualities I value?</label
-              >
-              <div class="panel-content">
-                <p>
-                  <mark
-                    ><strong>Adaptability and Problem-Solving:</strong></mark
-                  >
-                  In today’s rapidly changing world, I place high value on
-                  adaptability and creative problem-solving. Being able to
-                  adjust to new situations and think critically to find
-                  innovative solutions is essential. This flexibility not only
-                  helps overcome obstacles but also cultivates a resilient and
-                  growth-oriented mindset. <br /><br />
-
-                  <mark
-                    ><strong>Coachability and Eagerness to Learn:</strong></mark
-                  >
-                  I believe that a commitment to learning and personal growth is
-                  key to long-term success. I value individuals who are open to
-                  feedback, proactively seek knowledge, and demonstrate a
-                  willingness to improve. This coachable attitude enriches team
-                  dynamics and fosters effective collaboration. <br /><br />
-
-                  <mark><strong>Passion and Drive for Growth:</strong></mark>
-                  People who approach their work with enthusiasm and a genuine
-                  love for what they do inspire me. A deep passion, paired with
-                  an unrelenting drive to improve and achieve, leads to
-                  excellence. This intrinsic motivation not only propels
-                  personal success but also encourages those around them to
-                  reach higher. <br /><br />
-
-                  <mark><strong>Creativity:</strong></mark> Whether in
-                  generating ideas, solving problems, or exploring new
-                  possibilities, creativity is a quality I admire. The ability
-                  to think outside the box and bring original ideas to life
-                  sparks positive change and adds fresh perspectives to any
-                  endeavor. <br /><br />
-
-                  <mark
-                    ><strong
-                      >Appreciation for Life’s Small Moments:</strong
-                    ></mark
-                  >
-                  Finding joy in the simple, everyday moments is something I
-                  truly value. By savoring these small pleasures, I maintain a
-                  positive outlook and gratitude for life. This mindfulness
-                  enriches the journey, adding balance and well-being to both
-                  personal and professional life. <br /><br />
-                </p>
+            <div class="tech-stack-skill">
+              <img
+                width="75"
+                height="75"
+                src="https://img.icons8.com/ios/100/3461eb/tableau-software.png"
+                alt="tableau-software"
+              />
+              <div class="tech-stack-description">
+                <h5>Tableau</h5>
+                <p>Data Visualization</p>
               </div>
             </div>
 
-            <div class="faq-question">
-              <input id="q4" type="checkbox" class="panel" />
-              <div class="plus">+</div>
-              <label for="q4" class="panel-title"
-                >Where do you see yourself in 5 years? 10 years?</label
-              >
-              <div class="panel-content">
-                <p>
-                  <strong>5 Years:</strong>In the next five years, I plan to
-                  <mark
-                    >master core tools like SQL, Python, and cloud
-                    technologies</mark
-                  >
-                  to strengthen my foundation in data analytics and integrate
-                  machine learning into my skill set. My focus is on applying
-                  these skills to
-                  <mark
-                    >solve real-world problems and deliver impactful
-                    insights</mark
-                  >, regardless of the industry. Concurrently, I aim to pursue
-                  advanced certifications or a Master's degree in the field to
-                  solidify my expertise. On a personal level, I’m passionate
-                  about giving back by teaching data analytics to others through
-                  mentorship or workshops. Sharing knowledge not only helps
-                  others grow but also reinforces my own learning and connects
-                  me to the broader data community. <br /><br />
-
-                  <strong>10 Years:</strong>In ten years, I envision myself
-                  <mark
-                    >leading and managing a high-performing team, driving
-                    innovative data-driven projects, and shaping strategies that
-                    impact organizations and communities.</mark
-                  >
-                  I strive to be at the forefront of the ever-evolving data
-                  science field, continuously learning and adapting to new
-                  trends and technologies. Personally, I aspire to be recognized
-                  as a leader who inspires others, not just through technical
-                  expertise but also by mentoring the next generation of data
-                  professionals.
-                  <mark
-                    >My ultimate goal is to excel in my craft, consistently
-                    delivering value and innovation while staying ahead in this
-                    dynamic and fast-growing field.</mark
-                  >
-                </p>
+            <div class="tech-stack-skill">
+              <img
+                width="75"
+                height="75"
+                src="https://img.icons8.com/ios/100/3461eb/ms-excel.png"
+                alt="ms-excel"
+              />
+              <div class="tech-stack-description">
+                <h5>Excel</h5>
+                <p>Spreadsheet Editor</p>
               </div>
             </div>
           </div>
-
-          <div class="faq-question">
-            <input id="q5" type="checkbox" class="panel" />
-            <div class="plus">+</div>
-            <label for="q5" class="panel-title"
-              >How would I communicate findings to non-technical
-              stakeholders?</label
-            >
-            <div class="panel-content">
-              <p>
-                I communicate findings to non-technical stakeholders by focusing
-                on
-                <mark>key insights and using clear visuals</mark> to highlight
-                business impacts, avoiding technical jargon. I tailor my
-                approach to the audience’s goals and
-                <mark>encourage questions to ensure clarity</mark>. I conclude
-                with a concise summary to reinforce understanding and leave them
-                with actionable takeaways. <br /><br />
-                In my previous role, I frequently presented 3D models of
-                equipment and project worksites to a variety of professionals,
-                including electricians, engineers, project managers, and
-                stakeholders. These presentations required me to convey complex,
-                technical details in a way that aligned with each discipline's
-                priorities, ensuring everyone was on the same page.
-                <mark>Clear communication</mark> was essential to avoid
-                conflicts between departments and to balance the diverse needs
-                of each group. By
-                <mark>addressing potential concerns proactively</mark> and
-                translating technical models into understandable insights, I was
-                able to facilitate collaboration and ensure smooth project
-                progress for all involved.
-              </p>
-            </div>
-          </div>
-        </faq>
+        </div>
       </div>
     </section>
 
     <section id="Project">
       <div class="Personal Projects">
-        <h1>Stakeholder Projects</h1>
+        <h1>Personal Projects</h1>
         <div class="project-container">
           <div class="project-item">
-            <p>Tableau Portfolio</p>
+            <p>World Happiness Dashboard</p>
             <a
-              href="https://public.tableau.com/app/profile/alandeng7/vizzes"
+              href="https://github.com/AlanDeng7/World-Happiness-Dashboard"
               target="_blank"
               class="project-img"
-              ><img src="src/Resources/Images/tableau-logo.jpg" />
+              ><img src="src/Resources/Images/happiness_dashboard.png" />
               <div class="project-description">
                 <p>
-                  My Tableau Portfolio features interactive dashboards that turn
-                  complex data into actionable insights, covering areas like
-                  sales, customer segmentation, and performance tracking. Each
-                  project highlights my skills in data storytelling and visual
-                  analytics to support informed decision-making.
+                  An interactive dashboard that visualizes correlations between
+                  the World Happiness Index and factors like population,
+                  education spending, and migration.
                 </p>
+                <ul class="project-technology">
+                  <li>Python</li>
+                  <li>SQL</li>
+                  <li>Excel</li>
+                  <li>Data Cleaning</li>
+                  <li>Data Visualization</li>
+                </ul>
+              </div></a
+            >
+          </div>
+
+          <div class="project-item">
+            <p>Pet Image Classification Model</p>
+            <a
+              href="https://github.com/AlanDeng7/Pet-Image-Classification-Model"
+              target="_blank"
+              class="project-img"
+              ><img src="src/Resources/Images/pet_classification.png" />
+              <div class="project-description">
+                <p>
+                  An AI-powered tool identifies pet types (cats, dogs, etc.)
+                  from uploaded photos.
+                </p>
+                <ul class="project-technology">
+                  <li>Python</li>
+                  <li>Ai Model Training</li>
+                  <li>Data Collecting</li>
+                  <li>Data Cleaning</li>
+                </ul>
+              </div></a
+            >
+          </div>
+
+          <div class="project-item">
+            <p>Screen Time Analysis</p>
+            <a
+              href="https://github.com/AlanDeng7/Screen-Time-Analysis-Dashboard"
+              target="_blank"
+              class="project-img"
+              ><img src="src/Resources/Images/excel_dashboard.png" />
+              <div class="project-description">
+                <p>
+                  An Excel dashboard analyzes how screen time impacts
+                  middle-aged adults compared to other age groups.
+                </p>
+                <ul class="project-technology">
+                  <li>Excel</li>
+                  <li>Data Analysis</li>
+                  <li>Data Visualization</li>
+                </ul>
               </div></a
             >
           </div>
@@ -378,99 +273,17 @@
           </div>
 
           <div class="project-item">
-            <p>Screen Time Dashboard</p>
+            <p>Tableau Portfolio</p>
             <a
-              href="https://public.tableau.com/app/profile/alandeng7/viz/ScreenTimeMentalHealthDashboard/Dashboard"
+              href="https://public.tableau.com/app/profile/alandeng7/vizzes"
               target="_blank"
               class="project-img"
-              ><img src="src/Resources/Images/Screen Time Dashboard.png" />
+              ><img src="src/Resources/Images/tableau-logo.jpg" />
               <div class="project-description">
                 <p>
-                  This dashboard analyzes lifestyle and well-being, highlighting
-                  how technology use, habits, and health vary across age groups
-                  and genders. It reveals patterns linking screen time,
-                  activity, and mental health to overall well-being.
-                </p>
-              </div></a
-            >
-          </div>
-
-          <div class="project-item">
-            <p>British Airways Dashboard</p>
-            <a
-              href="https://public.tableau.com/app/profile/alandeng7/viz/AirlineDashboard_17314416154000/Dashboard"
-              target="_blank"
-              class="project-img"
-              ><img src="src/Resources/Images/British Airline Dashboard.png" />
-              <div class="project-description">
-                <p>
-                  This dashboard evaluates British Airways' performance with
-                  metrics like ratings, service, comfort, and food, filtered by
-                  continent and aircraft type. Interactive visuals and KPIs
-                  provide trends and insights into global flight satisfaction.
-                </p>
-              </div></a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div class="Personal Projects">
-        <h1>Personal Projects</h1>
-        <div class="project-container">
-          <div class="project-item">
-            <p>World Happiness Dashboard</p>
-            <a
-              href="https://github.com/AlanDeng7/World-Happiness-Dashboard"
-              target="_blank"
-              class="project-img"
-              ><img src="src/Resources/Images/happiness_dashboard.png" />
-              <div class="project-description">
-                <p>
-                  This interactive dashboard examines the relationships between
-                  World Happiness Index rankings and key factors such as
-                  population, education spending (as a percentage of GDP), and
-                  migration trends. By visualizing data, it highlights potential
-                  correlations and insights into the factors contributing to a
-                  nation's overall happiness.
-                </p>
-              </div></a
-            >
-          </div>
-
-          <div class="project-item">
-            <p>Pet Image Classification Model</p>
-            <a
-              href="https://github.com/AlanDeng7/Pet-Image-Classification-Model"
-              target="_blank"
-              class="project-img"
-              ><img src="src/Resources/Images/pet_classification.png" />
-              <div class="project-description">
-                <p>
-                  This project is an AI-powered tool that identifies different
-                  types of pets—like cats, dogs, birds, fish, hamsters, and
-                  bearded dragons—from uploaded photos. Trained on thousands of
-                  pet images, the model is hosted online, allowing users to
-                  easily upload a photo and see the pet type identified.
-                </p>
-              </div></a
-            >
-          </div>
-
-          <div class="project-item">
-            <p>Screen Time Analysis</p>
-            <a
-              href="https://github.com/AlanDeng7/Screen-Time-Analysis-Dashboard"
-              target="_blank"
-              class="project-img"
-              ><img src="src/Resources/Images/excel_dashboard.png" />
-              <div class="project-description">
-                <p>
-                  This Excel dashboard analyzes screen usage patterns across age
-                  groups, focusing on middle-aged adults. It compares their
-                  usage with that of young and older adults to assess the
-                  potential impact on middle-aged individuals amidst their busy
-                  lives.
+                  My Tableau portfolio features interactive dashboards that turn
+                  complex data into actionable insights, showcasing expertise in
+                  data storytelling and visual analytics.
                 </p>
               </div></a
             >
@@ -501,22 +314,6 @@
         </div>
 
         <div class="education-item-skill">
-          <i class="fa-brands fa-google fa-xl"></i>
-          <a
-            href="src/Resources/Certificates/udemy_project_management.pdf"
-            target="_blank"
-            >Google's Foundations of Project Management</a
-          >
-          <p>Coursera</p>
-          <ul class="education-skills">
-            <li>Project Management</li>
-            <li>Strategic Thinking</li>
-            <li>Organizational structure</li>
-          </ul>
-          <p>Completed: Oct 2021</p>
-        </div>
-
-        <div class="education-item-skill">
           <i class="fa-solid fa-laptop-code fa-2xl"></i>
           <a
             href="src/Resources/Certificates/UofT_data_analytics.pdf"
@@ -534,6 +331,25 @@
             <li>Data Visualization</li>
           </ul>
           <p>Completed: June 2023</p>
+        </div>
+      </div>
+
+      <h1>Online Courses</h1>
+      <div class="education-skills-container">
+        <div class="education-item-skill">
+          <i class="fa-brands fa-google fa-xl"></i>
+          <a
+            href="src/Resources/Certificates/udemy_project_management.pdf"
+            target="_blank"
+            >Google's Foundations of Project Management</a
+          >
+          <p>Coursera</p>
+          <ul class="education-skills">
+            <li>Project Management</li>
+            <li>Strategic Thinking</li>
+            <li>Organizational structure</li>
+          </ul>
+          <p>Completed: Oct 2021</p>
         </div>
 
         <div class="education-item-skill">
@@ -614,6 +430,23 @@
             <li>SQL</li>
             <li>Data Cleaning</li>
             <li>Exploratory Data Analyst</li>
+          </ul>
+          <p>Completed: Dec 2024</p>
+        </div>
+
+        <div class="education-item-skill">
+          <i class="fa fa-line-chart fa-2xl"></i>
+          <a
+            href="src/Resources/Certificates/Advanced MySQL for Data Analysis Certificate.pdf"
+            target="_blank"
+            >Advanced MySQL for Data Analysis
+          </a>
+          <p>Analyst Builder</p>
+          <ul class="education-skills">
+            <li>SQL</li>
+            <li>Query Optimizing</li>
+            <li>Store Procedures</li>
+            <li>Triggers and Events</li>
           </ul>
           <p>Completed: Dec 2024</p>
         </div>
