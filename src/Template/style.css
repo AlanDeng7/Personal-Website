@@ -1,7 +1,7 @@
 /*overall*/
-/* * {
+* {
   border: 1px solid red;
-} */
+}
 
 :root {
   /* Color Variables */
@@ -30,8 +30,7 @@ a {
 }
 
 section h1 {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 2.5%;
   text-align: center;
   color: var(--primary-color);
   text-decoration: none;
@@ -272,79 +271,180 @@ p {
 }
 
 /*Project Section ------------------------------------------------------------------------------------------*/
-.project-container {
-  margin: 2.5%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.projects-section {
+  width: 100vw;
+  height: 85vh;
+  padding: 2rem;
+  background-color: #fff;
 }
 
-.project-item {
+/* Section title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
   text-align: center;
-  align-items: center;
-  position: relative;
-  font-weight: 800;
+  letter-spacing: 0.02em;
 }
 
-.project-img img {
-  border-radius: 15px;
-  height: 15vw;
-  width: 25vw;
-  object-fit: contain;
+/* Grid layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.project-description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 94%;
-  height: 90%;
-  background-color: #5577df;
-  color: var(--primary-color);
+/* Individual project card */
+.project-card {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0s 0.3s;
-  padding: 20px;
-  border-radius: 15px;
-  font-weight: 400;
   flex-direction: column;
+  justify-content: space-between;
+  background-color: #fafafa;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  height: 100%;
+  min-height: 400px;
+  max-height: 600px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-card {
+  max-height: 6000px;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+/* Clickable area */
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Project image */
+.project-image {
+  width: 100%;
+  height: 220px;
+  display: block;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--font-family-main);
-  overflow-y: auto;
+  flex-shrink: 0;
 }
 
-.project-img:hover .project-description {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.3s ease, visibility 0s;
+.project-summary {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  height: 10%;
 }
 
-.project-technology {
+/* Technology list */
+.tech-list {
   list-style: none;
-  gap: 10px;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
-.project-technology li {
-  background-color: var(--background-color);
-  border-radius: 4px;
-  padding: 8px 12px;
-  border-radius: 4px;
-  line-height: 0.3;
+.tech-list li {
+  font-size: 0.85rem;
+  background-color: #e6e6e6;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  color: #333;
+  font: (var(--font-family-main));
 }
 
-.project-technology li:hover {
-  background-color: #ddd;
-  transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.project-cta {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #0070f3;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 1.2em;
+  pointer-events: none; /* Prevent text from breaking full-card click */
 }
 
-.project-techniques {
-  list-style: none;
-  justify-content: flex-start;
+.arrow {
+  margin-right: 0.5rem;
+  transition: color 0.3s ease;
+  pointer-events: none;
+}
+
+/* Text starts off-screen */
+.cta-slide-text {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  display: inline-block;
+}
+
+/* Reveal text on card hover */
+.project-card:hover .cta-slide-text {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Optional: change arrow color slightly */
+.project-card:hover .arrow {
+  color: #0051a3;
+}
+
+/* Hide the text initially */
+.cta-slide-text {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  display: inline-block;
+  pointer-events: none;
+}
+
+/* Reveal on hover */
+.project-card:hover .cta-slide-text {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.project-card:hover .arrow {
+  color: #0051a3;
 }
 
 /*Education Section -----------------------------------------------------------------------*/
