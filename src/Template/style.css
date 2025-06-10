@@ -8,7 +8,7 @@
   --primary-color: #000000;
   --secondary-color: #3461eb;
   --background-color: rgba(255, 255, 255, 0.7);
-  --highlight-color: #3462eb7e;
+  --highlight-color: #90a6e9;
   --shadow-color: rgba(0, 0, 0, 0.24);
 
   /* Font Variables */
@@ -23,6 +23,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+a {
+  color: var(--primary-color);
 }
 
 section h1 {
@@ -49,7 +53,7 @@ section h2 {
 /*NAV bar ------------------------------------------------------------------------------------------*/
 .fixed-nav {
   position: fixed;
-  background-color: var(--background-color);
+  background-color: white;
   top: 0;
   left: 0;
   width: 100%;
@@ -115,10 +119,6 @@ section h2 {
   cursor: pointer;
   transition: all 0.25s ease;
   border-radius: 6px;
-}
-
-a {
-  color: var(--primary-color);
 }
 
 /*Progress Bar Section ------------------------------------------------------------------------------------------*/
@@ -198,24 +198,20 @@ p {
 .CV-download-button,
 .LinkedIN-button,
 .Github-button {
-  cursor: pointer;
-  border-radius: 12px;
-  height: 56px;
-  width: 175px;
-  font-size: 15px;
-  color: var(--primary-color);
   background-color: var(--background-color);
-  border-color: var(--background-color);
-  padding: 0 12px;
-  margin: 0 8px;
-  transition: all 0.3s ease;
+  border-radius: 12px;
+  font-size: 15px;
+  padding: 10px;
   font-family: var(--font-family-main);
+  border: none;
+  padding: 15px 25px 0 25px;
+  transition: all 0.3s ease;
 }
 
 .CV-download-button:hover,
 .LinkedIN-button:hover,
 .Github-button:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .CV-download-button a:link,
@@ -259,8 +255,8 @@ p {
   color: var(--primary-color);
   background-color: var(--background-color);
   border-color: var(--background-color);
-  padding: 0 12px;
-  margin: 0 8px;
+  padding: 0 5px;
+  margin: 0 5px;
   text-decoration: none;
   font-weight: 400;
   letter-spacing: 0.4px;
@@ -268,7 +264,7 @@ p {
 }
 
 .copy-button:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .email-container i {
@@ -277,8 +273,7 @@ p {
 
 /*Project Section ------------------------------------------------------------------------------------------*/
 .project-container {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 2.5%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
