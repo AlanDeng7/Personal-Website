@@ -37,46 +37,41 @@
           <img
             class="icon-nav"
             src="src/Resources/Images/logo.png"
-            alt="Logo"
+            alt="Alan Deng Logo"
           />
         </a>
       </div>
 
       <div class="tab-nav">
         <button
-          class="about-tab section-button"
-          data-section="About"
-          aria-label="About Me"
-        >
-          <a href="#About">About</a>
-        </button>
-        <button
           class="project-tab section-button"
           data-section="Project"
           aria-label="Projects"
         >
-          <a href="#Project">Project</a>
+          <a href="#Project">Projects</a>
         </button>
         <button
-          class="education-tab section-button"
-          data-section="Education"
-          aria-label="Education"
+          class="portfolio-tab section-button"
+          data-section="Portfolio"
+          aria-label="Portfolio"
         >
-          <a href="#Education">Education</a>
+          <a href="#Portfolio">Portfolios</a>
         </button>
       </div>
     </nav>
 
+    <!-- Scroll Progress Bar-->
     <div id="scroll-progress-container">
       <div id="scroll-progress"></div>
     </div>
 
+    <!-- Welcome Section -->
     <header id="Welcome">
       <p>Hello there, I'm</p>
       <strong class="welcome-name"
         >Alan<span class="hyphen">-</span>Deng</strong
       >
-      <p>Electrical Engineer &#8594; Data Analyst</p>
+      <p>Supply Chain Analyst | Business Analyst | Data Analyst</p>
 
       <button class="CV-download-button" id="CV-download">
         <i class="fa-solid fa-file-arrow-down fa-xl"></i>
@@ -102,84 +97,20 @@
           <i class="fa-regular fa-copy"></i>
         </button>
       </div>
+
+      <a
+        href="#Project"
+        id="scroll-down-arrow"
+        class="scroll-down-arrow"
+        aria-label="Scroll Down"
+      >
+        <i class="fa-solid fa-chevron-down fa-2xl"></i>
+      </a>
     </header>
-
-    <section id="About">
-      <h1>About</h1>
-      <div class="about-Container">
-        <div class="about-photo">
-          <img src="src/Resources/Images/Headshot.png" />
-        </div>
-
-        <div class="about-right-container">
-          <div class="about-summary">
-            <mark>Data Analyst</mark> with an Electrical Engineering background
-            and a passion for <mark>Solving Complex Problems</mark>. I analyze
-            data to uncover valuable information that leads to
-            <mark>Effective Business Decisions</mark>.
-          </div>
-
-          <h2>My Technologies</h2>
-          <div class="about-tech-stack">
-            <div class="tech-stack-skill">
-              <img
-                width="75"
-                height="75"
-                src="https://img.icons8.com/external-outline-juicy-fish/60/3461eb/external-sql-coding-and-development-outline-outline-juicy-fish.png"
-                alt="external-sql-coding-and-development-outline-outline-juicy-fish"
-              />
-              <div class="tech-stack-description">
-                <h5>SQL</h5>
-                <p>Structured Query Language</p>
-              </div>
-            </div>
-
-            <div class="tech-stack-skill">
-              <img
-                width="75"
-                height="75"
-                src="https://img.icons8.com/ios/100/3461eb/python--v1.png"
-                alt="python--v1"
-              />
-              <div class="tech-stack-description">
-                <h5>Python</h5>
-                <p>Programming Language</p>
-              </div>
-            </div>
-
-            <div class="tech-stack-skill">
-              <img
-                width="75"
-                height="75"
-                src="https://img.icons8.com/ios/100/3461eb/tableau-software.png"
-                alt="tableau-software"
-              />
-              <div class="tech-stack-description">
-                <h5>Tableau</h5>
-                <p>Data Visualization</p>
-              </div>
-            </div>
-
-            <div class="tech-stack-skill">
-              <img
-                width="75"
-                height="75"
-                src="https://img.icons8.com/ios/100/3461eb/ms-excel.png"
-                alt="ms-excel"
-              />
-              <div class="tech-stack-description">
-                <h5>Excel</h5>
-                <p>Spreadsheet Editor</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section id="Project">
       <div class="Personal Projects">
-        <h1>Personal Projects</h1>
+        <h1>Projects</h1>
         <div class="project-container">
           <div class="project-item">
             <p>World Happiness Dashboard</p>
@@ -249,206 +180,78 @@
           </div>
         </div>
       </div>
-
-      <div class="Dashboard Projects">
-        <h1>Dashboards</h1>
-        <div class="project-container">
-          <div class="project-item">
-            <p>Microsoft Excel Dashboards</p>
-            <a
-              href="https://github.com/AlanDeng7/Excel-Dashboards"
-              target="_blank"
-              class="project-img"
-              ><img
-                src="https://prismtc.co.uk/media/y0idr1cc/excel-software-logo.png"
-              />
-              <div class="project-description">
-                <p>
-                  A repository of interactive Excel dashboards showcasing
-                  advanced techniques like dynamic charts, pivot tables, and
-                  effective data visualization.
-                </p>
-              </div></a
-            >
-          </div>
-
-          <div class="project-item">
-            <p>Tableau Portfolio</p>
-            <a
-              href="https://public.tableau.com/app/profile/alandeng7/vizzes"
-              target="_blank"
-              class="project-img"
-              ><img src="src/Resources/Images/tableau-logo.jpg" />
-              <div class="project-description">
-                <p>
-                  My Tableau portfolio features interactive dashboards that turn
-                  complex data into actionable insights, showcasing expertise in
-                  data storytelling and visual analytics.
-                </p>
-              </div></a
-            >
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section id="Education">
-      <h1>Education</h1>
-      <div class="education-skills-container">
-        <div class="education-item-skill">
-          <i class="fa-solid fa-graduation-cap fa-2xl"></i>
-          <a href="src/Resources/Certificates/OTU_ee.pdf" target="_blank"
-            >Bachelor of Engineering (Honours), Electrical Engineering</a
-          >
-          <p>
-            University of Ontario Institute of Technology / Ontario Tech
-            University
-          </p>
-          <ul class="education-skills">
-            <li>Strategic Thinking</li>
-            <li>Problem Solving</li>
-            <li>Project Management</li>
-            <li>Time Management</li>
-          </ul>
-          <p>Completed: May 2020</p>
-        </div>
+    <section id="Protfolio">
+      <div class="Protfolio Projects">
+        <h1>Protfolios</h1>
+        <div class="project-container">
+          <div class="project-item">
+            <p>World Happiness Dashboard</p>
+            <a
+              href="https://github.com/AlanDeng7/World-Happiness-Dashboard"
+              target="_blank"
+              class="project-img"
+              ><img src="src/Resources/Images/happiness_dashboard.png" />
+              <div class="project-description">
+                <p>
+                  An interactive dashboard that visualizes correlations between
+                  the World Happiness Index and factors like population,
+                  education spending, and migration.
+                </p>
+                <ul class="project-technology">
+                  <li>Python</li>
+                  <li>SQL</li>
+                  <li>Excel</li>
+                  <li>Data Cleaning</li>
+                  <li>Data Visualization</li>
+                </ul>
+              </div></a
+            >
+          </div>
 
-        <div class="education-item-skill">
-          <i class="fa-solid fa-laptop-code fa-2xl"></i>
-          <a
-            href="src/Resources/Certificates/UofT_data_analytics.pdf"
-            target="_blank"
-            >Data Analytics Boot Camp</a
-          >
-          <p>University of Toronto School of Continuing Studies</p>
-          <ul class="education-skills">
-            <li>Python</li>
-            <li>Microsoft Excel</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Statistical Modeling</li>
-            <li>Data Visualization</li>
-          </ul>
-          <p>Completed: June 2023</p>
-        </div>
-      </div>
+          <div class="project-item">
+            <p>Pet Image Classification Model</p>
+            <a
+              href="https://github.com/AlanDeng7/Pet-Image-Classification-Model"
+              target="_blank"
+              class="project-img"
+              ><img src="src/Resources/Images/pet_classification.png" />
+              <div class="project-description">
+                <p>
+                  An AI-powered tool identifies pet types (cats, dogs, etc.)
+                  from uploaded photos.
+                </p>
+                <ul class="project-technology">
+                  <li>Python</li>
+                  <li>Ai Model Training</li>
+                  <li>Data Collecting</li>
+                  <li>Data Cleaning</li>
+                </ul>
+              </div></a
+            >
+          </div>
 
-      <h1>Online Courses</h1>
-      <div class="education-skills-container">
-        <div class="education-item-skill">
-          <i class="fa-brands fa-google fa-xl"></i>
-          <a
-            href="src/Resources/Certificates/udemy_project_management.pdf"
-            target="_blank"
-            >Google's Foundations of Project Management</a
-          >
-          <p>Coursera</p>
-          <ul class="education-skills">
-            <li>Project Management</li>
-            <li>Strategic Thinking</li>
-            <li>Organizational structure</li>
-          </ul>
-          <p>Completed: Oct 2021</p>
-        </div>
-
-        <div class="education-item-skill">
-          <i class="fa-brands fa-free-code-camp fa-2xl"></i>
-          <a
-            href="src/Resources/Certificates/freecodecampm_responsive_web_design.pdf"
-            target="_blank"
-            >Responsive Web Design</a
-          >
-          <p>freeCodeCamp</p>
-          <ul class="education-skills">
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-          <p>Completed: Dec 2023</p>
-        </div>
-
-        <div class="education-item-skill">
-          <i class="fa-brands fa-square-js fa-2xl"></i>
-          <a
-            href="src/Resources/Certificates/udemy_javascript.pdf"
-            target="_blank"
-            >The Complete JavaScript Course 2024: From Zero to Expert!</a
-          >
-          <p>Udemy</p>
-          <ul class="education-skills">
-            <li>JavaScript</li>
-            <li>Data Structures</li>
-            <li>Object-Oriented Programming</li>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-          <p>Completed: June 2024</p>
-        </div>
-
-        <div class="education-item-skill">
-          <i class="fa-solid fa-laptop-code fa-2xl"></i>
-          <a
-            href="src/Resources/Certificates/udemy_statistics.pdf"
-            target="_blank"
-            >Statistics for Data Science and Business Analysis</a
-          >
-          <p>Udemy</p>
-          <ul class="education-skills">
-            <li>Microsoft Excel</li>
-            <li>Data Science</li>
-            <li>Business Analytics</li>
-            <li>Statistics</li>
-          </ul>
-          <p>Completed: Nov 2024</p>
-        </div>
-
-        <div class="education-item-skill">
-          <i class="fa fa-line-chart fa-2xl"></i>
-          <a
-            href="src/Resources/Certificates/MySQL for Data Analytics Certificate.pdf"
-            target="_blank"
-            >MySQL for Data Analytics</a
-          >
-          <p>Analyst Builder</p>
-          <ul class="education-skills">
-            <li>SQL</li>
-            <li>Data Cleaning</li>
-            <li>Exploratory Data Analyst</li>
-          </ul>
-          <p>Completed: Dec 2024</p>
-        </div>
-
-        <div class="education-item-skill">
-          <i class="fa fa-line-chart fa-2xl"></i>
-          <a
-            href="src/Resources/Certificates/MySQL Interview Crash Course Certificate.pdf"
-            target="_blank"
-            >MySQL Interview Crash Course</a
-          >
-          <p>Analyst Builder</p>
-          <ul class="education-skills">
-            <li>SQL</li>
-            <li>Data Cleaning</li>
-            <li>Exploratory Data Analyst</li>
-          </ul>
-          <p>Completed: Dec 2024</p>
-        </div>
-
-        <div class="education-item-skill">
-          <i class="fa fa-line-chart fa-2xl"></i>
-          <a
-            href="src/Resources/Certificates/Advanced MySQL for Data Analysis Certificate.pdf"
-            target="_blank"
-            >Advanced MySQL for Data Analysis
-          </a>
-          <p>Analyst Builder</p>
-          <ul class="education-skills">
-            <li>SQL</li>
-            <li>Query Optimizing</li>
-            <li>Store Procedures</li>
-            <li>Triggers and Events</li>
-          </ul>
-          <p>Completed: Dec 2024</p>
+          <div class="project-item">
+            <p>Screen Time Analysis</p>
+            <a
+              href="https://github.com/AlanDeng7/Screen-Time-Analysis-Dashboard"
+              target="_blank"
+              class="project-img"
+              ><img src="src/Resources/Images/excel_dashboard.png" />
+              <div class="project-description">
+                <p>
+                  An Excel dashboard analyzes how screen time impacts
+                  middle-aged adults compared to other age groups.
+                </p>
+                <ul class="project-technology">
+                  <li>Excel</li>
+                  <li>Data Analysis</li>
+                  <li>Data Visualization</li>
+                </ul>
+              </div></a
+            >
+          </div>
         </div>
       </div>
     </section>
@@ -506,5 +309,6 @@
     <script src="src/Static/email.js"></script>
     <script src="src/Static/faq-button.js"></script>
     <script src="src/Static/CV-download.js"></script>
+    <script src="src/Static/arrows.js"></script>
   </body>
 </html>

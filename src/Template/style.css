@@ -10,8 +10,7 @@
   --text-color: #333;
   --background-color: #ffffff;
   --highlight-color: #3462eb7e;
-  --shadow-color-1: rgba(0, 0, 0, 0.24);
-  --shadow-color-2: rgba(0, 0, 0, 0.19);
+  --shadow-color: rgba(0, 0, 0, 0.24);
 
   /* Font Variables */
   --font-family-main: "Open Sans", monospace;
@@ -84,7 +83,6 @@ section h2 {
   padding-right: 15px;
 }
 
-.about-tab,
 .project-tab,
 .experience-tab,
 .education-tab,
@@ -93,7 +91,7 @@ section h2 {
   font-size: var(--font-size-small);
   cursor: default;
   margin: 7px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   color: var(--primary-color);
   border: none;
   text-decoration: none;
@@ -101,31 +99,21 @@ section h2 {
   font-weight: bold;
 }
 
-.about-tab a:link,
 .project-tab a:link,
-.experience-tab a:link,
-.education-tab a:link,
-.contact-tab a:link,
-.about-tab a:visited,
+.portfolio-tab a:link,
 .project-tab a:visited,
-.experience-tab a:visited,
-.education-tab a:visited,
-.contact-tab a:visited {
+.portfolio-tab a:visited {
   color: var(--primary-color);
   text-decoration: none;
 }
 
-.about-tab:hover,
 .project-tab:hover,
-.experience-tab:hover,
-.education-tab:hover,
-.contact-tab:hover {
+.portfolio-tab:hover {
+  border-radius: 8px;
+  transition: all 0.3s ease;
   opacity: 1;
-  transition-duration: 0.6s;
-  background-color: var(--highlight-color);
-  border-radius: 10px;
-  box-shadow: 0 12px 16px 0 var(--shadow-color-1),
-    0 17px 50px 0 var(--shadow-color-2);
+  box-shadow: 0 2px 6px var(--shadow-color);
+  transition: all 0.3s ease;
 }
 
 a {
@@ -154,9 +142,37 @@ a {
   transition: width 0.2s ease;
 }
 
+/*arrows Section ------------------------------------------------------------------------------------------*/
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.75rem;
+  color: var(--secondary-color);
+  backdrop-filter: blur(6px);
+  transition: opacity 1s ease;
+}
+
+.scroll-down-arrow:hover {
+  transform: translateX(-50%) scale(1.05);
+  padding: 12px;
+  border-radius: 50%;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.scroll-down-arrow.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+}
+
 /*Welcome Section ------------------------------------------------------------------------------------------*/
 #Welcome {
-  margin-top: 350px;
+  margin-top: 300px;
   height: 80vh;
   text-align: center;
 }
@@ -259,81 +275,6 @@ mark {
 
 .email-container i {
   color: var(--secondary-color);
-}
-
-/*About Section------------------------------------------------------------------------------------------*/
-.about-Container {
-  display: flex;
-  justify-content: center;
-  padding-left: 2%;
-  padding-right: 2%;
-  gap: 5px;
-}
-.about-photo img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25vw;
-  border-radius: 50px;
-}
-
-.about-right-container {
-  margin: 10px;
-}
-.about-summary {
-  margin: 75px;
-  font-size: 2.8vh;
-  font-weight: thin;
-  font-style: italic;
-  font-family: var(--font-family-main);
-  line-height: 1.6;
-}
-
-.about-tech-stack {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: var(--font-family-main);
-  margin: 10px;
-}
-
-.tech-stack-skill {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--primary-color);
-  border-radius: 10px;
-  margin: 1vh;
-}
-
-.tech-stack-skill img {
-  transition: transform 0.3s ease;
-}
-
-.tech-stack-skill:hover img {
-  transform: scale(1.05) rotate(10deg);
-}
-
-.tech-stack-icon {
-  display: flex;
-  align-items: center;
-  height: 10vh;
-  width: 10vh;
-  margin-left: 15px;
-  background-color: var(--secondary-color);
-}
-.tech-stack-description {
-  margin-top: -15px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.tech-stack-description h5 {
-  font-size: 20px;
-  height: 0.7vh;
-}
-.tech-stack-description p {
-  font-size: 1.25vh;
 }
 
 /*Project Section ------------------------------------------------------------------------------------------*/
