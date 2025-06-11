@@ -296,7 +296,7 @@ p {
   overflow: hidden;
   transition: transform 0.3s ease;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
-  height: 90vh;
+  height: 80vh;
   min-height: 400px;
   max-height: 600px;
   max-height: 85%;
@@ -310,7 +310,7 @@ p {
 .project-content {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0.75rem;
   flex-grow: 1;
   justify-content: space-between;
 }
@@ -331,7 +331,7 @@ p {
 
 .project-title {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   margin: 0.5rem 0;
   height: 3rem;
@@ -344,7 +344,7 @@ p {
 
 .project-summary {
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.75rem;
   line-height: 1.6;
   margin: 0.5rem 0;
   flex-grow: 1;
@@ -460,17 +460,13 @@ p {
   text-align: center;
   width: 80vw;
   box-sizing: border-box;
-  margin-left: 0.5vw;
   align-items: center;
+  margin: 0 5vw 0 5vw;
 }
 
 .about-picture-headshot img {
   width: 25vw;
   border-radius: 50%;
-}
-
-.about-picture p {
-  font: arial;
 }
 
 .about-summary {
