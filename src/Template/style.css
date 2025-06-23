@@ -472,10 +472,15 @@ p {
 .about-summary {
   text-align: left;
   margin: 2vw;
-  font-size: 1.5vw;
+  font-size: 1.25vw;
   padding: 0 2.5vw;
   font-weight: lighter;
   font-family: var(--font-family-main);
+}
+
+.about-summary mark {
+  background-color: #3462ebba;
+  border-radius: 4px;
 }
 
 .about-picture-techstack {
@@ -492,28 +497,6 @@ p {
 .about-picture-techstack-image {
   position: relative;
   z-index: 1;
-}
-
-/* Tooltip */
-.about-picture-techstack-tooltip {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--color-primary);
-  color: var(--color-background);
-  padding: 0.5vw;
-  border-radius: 5px;
-  opacity: 0;
-  visibility: hidden;
-  font-size: 1.5vw;
-  transition: all 0.3s ease;
-}
-
-.about-picture-techstack-image:hover .about-picture-techstack-tooltip {
-  opacity: 1;
-  visibility: visible;
-  top: 100%;
 }
 
 /*Footer Section ------------------------------------------------------------------------------------------*/
